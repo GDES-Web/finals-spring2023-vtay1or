@@ -1,6 +1,5 @@
 body, html {
     margin: 0;
-    height: 100%;
     font-family: sans-serif;
 }
 .hero {
@@ -22,10 +21,8 @@ body, html {
         justify-content: center;
         flex-direction: column;
         width: 100px;
-        height: 100px;
         color: white;
         padding: 100px;
         text-align: center; 
-
     }
 }
