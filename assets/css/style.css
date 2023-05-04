@@ -1,6 +1,5 @@
 body, html {
   margin: 0;
-  height: 100%;
   font-family: sans-serif;
 }
 
@@ -17,8 +16,15 @@ body, html {
   background-size: cover;
   margin: 0;
 }
-.hero .hero-subtitle, .hero .hero-title {
+.hero .hero-quote {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100px;
   color: white;
+  padding: 100px;
+  text-align: center;
 }
 
 .container {
@@ -58,13 +64,11 @@ a:hover {
   text-align: center;
 }
 
-img {
+.card img {
   border-radius: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  padding: 5px;
 }
 
 h2 {
@@ -151,12 +155,11 @@ h2 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 
-.footer-content {
+.footer-content h3 p {
   max-width: 500px;
-  margin: 10px auto;
-  line-height: 28px;
 }
 
 .footer-links a {
@@ -172,6 +175,14 @@ h2 {
 
 .footer-links a:hover {
   color: #f34079;
+}
+
+.footer-content h3 p {
+  margin: 0;
+}
+
+.footer-content li {
+  align-items: center;
 }
 
 .book-info {
