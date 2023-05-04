@@ -1,0 +1,20 @@
+.breadcrumb-nav {
+    padding: 2em;
+}
+.breadcrumb-nav a {
+    color: #fc894d;
+    text-decoration: none;
+}
+.breadcrumb-nav a:hover {
+    color: #f34079;
+    text-decoration: none;
+}
+.breadcrumb-nav > li {
+    display: inline;
+}
+
+.breadcrumb-nav li + li:before {
+    padding: 4px;
+    content: "/";
+    color: #f34079;
+  }

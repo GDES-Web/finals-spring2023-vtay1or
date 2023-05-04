@@ -17,16 +17,8 @@ body, html {
   background-size: cover;
   margin: 0;
 }
-.hero .hero-quote {
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100px;
-  height: 100px;
+.hero .hero-subtitle, .hero .hero-title {
   color: white;
-  padding: 100px;
-  text-align: center;
 }
 
 .container {
@@ -87,7 +79,7 @@ h2 {
 }
 
 .btn {
-  background-color: white;
+  background: none;
   padding: 15px;
   margin: 0;
   color: #f34079;
@@ -95,6 +87,7 @@ h2 {
   border: 2px solid #f34079;
   font-family: "Lato", sans-serif;
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
 }
 
@@ -104,7 +97,7 @@ h2 {
 
 .btn.gradient.noborder:hover, .btn.gradient:active {
   background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
-  border-color: white;
+  border-color: none;
 }
 
 .btn.fill:hover {
@@ -119,6 +112,144 @@ h2 {
 
 .btn.shadow:hover {
   box-shadow: 5px 5px #f34079;
+}
+
+.logo {
+  display: inline-block;
+  width: fit-content;
+  margin: 10;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+}
+
+.nav-links li {
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  margin: 0 auto;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+.nav-links a:hover {
+  color: #fc894d;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  color: #fc894d;
+}
+
+.footer-links li {
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: #f34079;
+}
+
+.book-info {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 5px;
+  align-items: center;
+}
+
+img {
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding: 5px;
+}
+
+.book-info p {
+  padding: 1em;
+}
+
+.btn fill {
+  align-self: center;
+  padding: 0%;
+}
+
+.book-info h1 {
+  font-size: revert;
+  align-items: center;
+}
+
+.breadcrumb-nav {
+  padding: 2em;
+}
+
+.breadcrumb-nav a {
+  color: #fc894d;
+  text-decoration: none;
+}
+
+.breadcrumb-nav a:hover {
+  color: #f34079;
+  text-decoration: none;
+}
+
+.breadcrumb-nav > li {
+  display: inline;
+}
+
+.breadcrumb-nav li + li:before {
+  padding: 4px;
+  content: "/";
+  color: #f34079;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f34079; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
