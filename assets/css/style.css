@@ -1,5 +1,6 @@
 body, html {
   margin: 0;
+  height: 100%;
   font-family: sans-serif;
 }
 
@@ -16,15 +17,8 @@ body, html {
   background-size: cover;
   margin: 0;
 }
-.hero .hero-quote {
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100px;
+.hero .hero-subtitle, .hero .hero-title {
   color: white;
-  padding: 100px;
-  text-align: center;
 }
 
 .container {
