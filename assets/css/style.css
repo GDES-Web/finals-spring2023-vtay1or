@@ -148,20 +148,43 @@ input[type=checkbox] {
   display: none;
 }
 
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-    position: absolute;
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 16px 0;
+@media only screen and (max-width: 736px) and (orientation: portrait) {
+  .navbar {
+    align-items: center;
   }
-  input[type=checkbox]:checked ~ .menu {
+  .navbar ul {
+    position: absolute;
+    top: 34px;
+    width: 100%;
+    background: darkgrey;
+    height: 0;
+    overflow: hidden;
+    transition: height 1s;
+  }
+  .navbar li {
     display: block;
+    width: 100%;
+    padding: 5px;
   }
   .hamburger {
     display: block;
+    color: aqua;
+    padding: 0px 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .hamburger:hover {
+    color: black;
+  }
+  .navbar a {
+    display: block;
+  }
+  #checkbox_toggle:checked ~ ul {
+    height: 140px;
+    transition: height 1s;
+  }
+  .navbar li:hover {
+    background: lightgrey;
   }
 }
 .footer-content {
@@ -256,7 +279,7 @@ img {
 
 .alert {
   padding: 20px;
-  background-color: #f34079; /* Red */
+  background-color: #fc894d;
   color: white;
   margin-bottom: 15px;
 }
@@ -275,7 +298,7 @@ img {
 
 /* When moving the mouse over the close button */
 .closebtn:hover {
-  color: black;
+  color: #f34079;
 }
 
 /*# sourceMappingURL=style.css.map */
