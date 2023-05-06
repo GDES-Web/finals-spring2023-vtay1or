@@ -15,16 +15,25 @@
         <link rel="stylesheet" href="./../reset.css">
 </head>
 <nav class="navbar">
-    <a href="/" class="logo"><img src="/public/imgs/Telegram - Negative.svg"></a>
+    <div class="logo"><img src="../imgs/Telegram - Negative.svg"></div>
     <ul class="nav-links">
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>        
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
+        <input type="checkbox" id="checkbox_toggle"/>
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="services">
+                <a href="#">Services</a>
+                <ul class="dropdown">
+                    <li><a href="/">Dropdown 1</a></li>
+                    <li><a href="/">Dropdown 2</a></li>
+                    <li><a href="/">Dropdown 3</a></li>
+                    <li><a href="/">Dropdown 4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </div>
     </ul>
 </nav>
-
 
 </html>
