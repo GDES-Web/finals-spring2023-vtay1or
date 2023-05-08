@@ -1,9 +1,15 @@
 .about, .schedule {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0 auto;
     padding: 2em;
 }
 
+.about p {
+    font-family: 'Yeseva One', cursive;
+    color: #fc894d;
+    font-size: 24px;
+    text-align: center;
+}
 .schedule ul {
     margin: 0 auto;
 
@@ -24,4 +30,38 @@
 .card border {
     justify-content: space-between;
     width: 45%;
+}
+
+ul.footer-links {
+    text-align: center;
+}
+.sponsers {
+    text-align: center;
+}
+
+.sponsers li h3 {
+    font-size: larger;
+    color: #fc894d;
+    padding: 5px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+    font-size: 15px;
+    padding: 3px;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-info li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: #fc894d;
+}
+
+.footer-info li {
+    display: inline-block;
 }
