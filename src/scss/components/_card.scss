@@ -11,8 +11,7 @@
     height: 50%;
     padding: 16px;
     margin: 10px auto;
-    color: white;
-    background-image: linear-gradient(135deg, rgb(243, 64, 121) 40%, rgb(252, 137, 77));
+    color: black;
     border-radius: 20px;
 }
 
@@ -25,21 +24,21 @@ a:hover {
     color: rgb(215, 215, 215);
 }
 
-.card.border {
-    background-image: none;
-    border-image: linear-gradient(135deg, rgb(243, 64, 121) 40%, rgb(252, 137, 77)) 1;
+.card border {
+    background-color: none;
     border-style: solid;
     border-width: 4px;
-    color: #f34079;
     text-align: center;
 }
-.card img {
+img {
     border-radius: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-  
+    width: 50%;
+    padding: 2em;
+}
+
 h2 {
     margin-top: 16px;
     font-size: 3em;
