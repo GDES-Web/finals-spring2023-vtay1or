@@ -1,7 +1,7 @@
 body, html {
   margin: 0;
   height: 100%;
-  font-family: sans-serif;
+  font-family: "Yeseva One", cursive;
 }
 
 .hero {
@@ -16,27 +16,38 @@ body, html {
   position: relative;
   background-size: cover;
   margin: 0;
+  z-index: 1;
 }
 .hero .hero-subtitle, .hero .hero-title {
   color: white;
+}
+.hero .hero-title {
+  font-size: 50px;
+}
+.hero .hero-subtitle {
+  font-size: medium;
 }
 
 .container {
   max-width: 300px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 50%;
+  width: 45%;
   height: fit-content;
-  padding: 16px;
+  padding: 20px;
   margin: 10px auto;
   color: black;
   border-radius: 20px;
   overflow: hidden;
+  align-items: center;
 }
 
 .card-link {
@@ -57,16 +68,18 @@ a:hover {
 }
 
 img {
-  border-radius: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 5em;
+  height: fit-content;
+  width: inherit;
+  border-radius: 20px;
 }
 
 h2 {
-  margin-top: 16px;
-  font-size: 3em;
+  margin-bottom: 16px;
+  font-size: 2em;
 }
 
 .btn {
@@ -78,7 +91,7 @@ h2 {
 .btn {
   background: none;
   padding: 15px;
-  margin: 0;
+  margin: 10px;
   color: #f34079;
   border-radius: 25px;
   border: 2px solid #f34079;
@@ -105,6 +118,8 @@ h2 {
 .btn.square {
   border-radius: 0;
   color: #f34079;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .btn.shadow:hover {
@@ -121,7 +136,7 @@ h2 {
   top: 0%;
   left: 0%;
   right: 0%;
-  z-index: 5;
+  z-index: 100;
 }
 
 .nav-links a {
@@ -265,42 +280,45 @@ input[type=checkbox] {
   color: #f34079;
 }
 
-.footer-content h3 p {
-  margin: 0;
+.footer-content h3 {
+  font-size: revert;
 }
 
 .footer-content li {
   align-items: center;
 }
 
-.book-info {
+.footer-content p {
+  text-align: center;
+  color: #727272;
+}
+
+.about, .schedule {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.schedule ul {
+  margin: 0 auto;
+}
+
+.registration {
   display: flex;
-  flex-flow: column wrap;
-  padding: 5px;
-  align-items: center;
+  justify-content: center;
 }
 
-img {
-  border-radius: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  padding: 5px;
+.speakers {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 2em;
 }
 
-.book-info p {
-  padding: 1em;
-}
-
-.btn fill {
-  align-self: center;
-  padding: 0%;
-}
-
-.book-info h1 {
-  font-size: revert;
-  align-items: center;
+.card border {
+  justify-content: space-between;
+  width: 45%;
 }
 
 .breadcrumb-nav {

@@ -1,8 +1,7 @@
 body, html {
     margin: 0;
     height: 100%;
-    font-family: sans-serif;
-}
+    font-family: 'Yeseva One', cursive;}
 .hero {
     display: flex;
     width: 100vw;
@@ -15,8 +14,16 @@ body, html {
     position: relative;
     background-size: cover;
     margin: 0;
+    z-index: 1;
     
     .hero-subtitle, .hero-title {
         color: white;
+    }
+    .hero-title {
+        font-size: 50px;
+    }
+
+    .hero-subtitle {
+        font-size: medium;
     }
 }

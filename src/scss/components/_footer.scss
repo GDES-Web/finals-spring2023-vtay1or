@@ -25,10 +25,13 @@
     color: #f34079;
 }
 
-.footer-content h3 p {
-    margin: 0;
+.footer-content h3 {
+    font-size: revert;
 }
-
 .footer-content li {
     align-items: center;
+}
+.footer-content p {
+    text-align: center;
+    color:#727272;
 }
