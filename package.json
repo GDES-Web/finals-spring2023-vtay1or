@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "sass --watch --update ./src/scss:./assets/css/",
-    "build": "sass ./src/scss:./assets/css"
+    "dev": "sass --watch --update src/scss:public/css/",
+    "build": "sass src/scss:public/css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "msw": "^1.2.1",
     "node-sass": "^8.0.0",
     "sass": "^1.62.1"
   },

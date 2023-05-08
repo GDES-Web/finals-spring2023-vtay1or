@@ -1,0 +1,414 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: "Yeseva One", cursive;
+}
+
+.hero {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-position: center;
+  background-image: url("/public/imgs/Plane.jpg");
+  position: relative;
+  background-size: cover;
+  margin: 0;
+  z-index: -1;
+}
+.hero .hero-subtitle, .hero .hero-title {
+  color: white;
+}
+.hero .hero-title {
+  font-size: 50px;
+}
+.hero .hero-subtitle {
+  font-size: medium;
+}
+
+.container {
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 45%;
+  height: fit-content;
+  padding: 20px;
+  margin: 10px auto;
+  color: black;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.card-link {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(215, 215, 215);
+}
+
+.card border {
+  background-color: none;
+  border-style: solid;
+  border-width: 4px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5em;
+  height: fit-content;
+  width: inherit;
+  border-radius: 20px;
+}
+
+h2 {
+  margin-bottom: 16px;
+  font-size: 2em;
+}
+
+.btn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.btn {
+  background: none;
+  padding: 15px;
+  margin: 10px;
+  color: #f34079;
+  border-radius: 25px;
+  border: 2px solid #f34079;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn.gradient.noborder:hover, .btn.gradient:active {
+  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+  border-color: none;
+}
+
+.btn.fill:hover {
+  background-color: #f34079;
+  color: white;
+}
+
+.btn.square {
+  border-radius: 0;
+  color: #f34079;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.btn.shadow:hover {
+  box-shadow: 5px 5px #f34079;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(135deg, rgb(243, 64, 121) 40%, rgb(252, 137, 77));
+  color: #fff;
+  padding: 0% 1em;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 100;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+.logo img {
+  padding: 1em;
+  z-index: 20;
+  width: 3em;
+  width: 3em;
+}
+
+li a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: #fc894d;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 8px 14px;
+  background-color: none;
+  font-family: "Lato", sans-serif;
+}
+
+.services {
+  position: relative;
+}
+
+.dropdown {
+  background-color: #f34079;
+  padding: 1em 0;
+  position: 1em 0;
+  position: absolute;
+  display: none;
+  border-radius: 25px;
+  top: 35px;
+  margin-left: -14px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #fc894d;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    background-image: linear-gradient(135deg, rgb(243, 64, 121) 40%, rgb(252, 137, 77));
+  }
+  .menu li:hover {
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+  .content-container {
+    flex-direction: column;
+  }
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 5em;
+}
+
+.footer-content h3 p {
+  max-width: 500px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  color: #fc894d;
+}
+
+.footer-links li {
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: #f34079;
+}
+
+.footer-content h3 {
+  font-size: revert;
+}
+
+.footer-content li {
+  align-items: center;
+}
+
+.footer-content p {
+  text-align: center;
+  color: #727272;
+}
+
+.about, .schedule {
+  font-family: "Lato", sans-serif;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.about p {
+  font-family: "Yeseva One", cursive;
+  color: #fc894d;
+  font-size: 24px;
+  text-align: center;
+}
+
+.schedule ul {
+  margin: 0 auto;
+}
+
+.registration {
+  display: flex;
+  justify-content: center;
+}
+
+.speakers {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 2em;
+}
+
+.card border {
+  justify-content: space-between;
+  width: 45%;
+}
+
+ul.footer-links {
+  text-align: center;
+}
+
+.sponsers {
+  text-align: center;
+}
+
+.sponsers li h3 {
+  font-size: larger;
+  color: #fc894d;
+  padding: 5px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2em;
+  font-size: 15px;
+  padding: 3px;
+  font-family: "Lato", sans-serif;
+}
+
+.footer-info li a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  color: #fc894d;
+}
+
+.footer-info li {
+  display: inline-block;
+}
+
+.breadcrumb-nav {
+  padding: 2em;
+}
+
+.breadcrumb-nav a {
+  color: #fc894d;
+  text-decoration: none;
+}
+
+.breadcrumb-nav a:hover {
+  color: #f34079;
+  text-decoration: none;
+}
+
+.breadcrumb-nav > li {
+  display: inline;
+}
+
+.breadcrumb-nav li + li:before {
+  padding: 4px;
+  content: "/";
+  color: #f34079;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #fc894d;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: #f34079;
+}
+
+/*# sourceMappingURL=style.css.map */
