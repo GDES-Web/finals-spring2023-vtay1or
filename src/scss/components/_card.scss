@@ -1,6 +1,6 @@
 .container {
-    max-width: 300px;
-    margin: 0 auto;
+    max-width: 80%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -9,7 +9,7 @@
 .card {
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-    box-shadow: 0 4px 8px 0 rgba(6, 109, 51, 0.2);
+    border: 5px solid $secondary-color;
     width: auto;
     height: fit-content;
     padding: 20px;

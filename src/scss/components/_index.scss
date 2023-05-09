@@ -11,10 +11,27 @@
     text-align: center;
 }
 
+.schedule {
+    margin: 0;
+    padding: 0;
+}
 .schedule ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
+    padding: 3em;
+    background-color: $primary-color;
+    height: 10em;
+}
+.schedule li {
+    color: $third-color;
 }
 
+.schedule h3 {
+    font-family: 'Yeseva One', cursive;
+    color: $secondary-color;
+}
 .registration {
     display: flex;
     justify-content: center;
