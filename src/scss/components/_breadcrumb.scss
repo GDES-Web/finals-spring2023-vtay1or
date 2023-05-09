@@ -2,11 +2,11 @@
     padding: 2em;
 }
 .breadcrumb-nav a {
-    color: #fc894d;
+    color: $secondary-color;
     text-decoration: none;
 }
 .breadcrumb-nav a:hover {
-    color: #f34079;
+    color: $primary-color;
     text-decoration: none;
 }
 .breadcrumb-nav > li {
@@ -16,5 +16,5 @@
 .breadcrumb-nav li + li:before {
     padding: 4px;
     content: "/";
-    color: #f34079;
+    color: $primary-color;
   }

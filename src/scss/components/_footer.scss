@@ -6,6 +6,7 @@
     align-items: center;
     margin: 0 auto;
     margin-top: 5em;
+    background-color: #f3ede1;
 }
 .footer-content h3 p {
     max-width: 500px;
@@ -14,7 +15,7 @@
     text-decoration: none;
     padding: 10px;
     display: block;
-    color: #fc894d;
+    color: $secondary-color;
 }
 
 .footer-links li {
@@ -22,7 +23,7 @@
 }
 
 .footer-links a:hover {
-    color: #f34079;
+    color: $primary-color;
 }
 
 .footer-content h3 {

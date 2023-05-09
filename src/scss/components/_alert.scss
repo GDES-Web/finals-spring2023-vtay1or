@@ -1,14 +1,14 @@
 .alert {
     padding: 20px;
-    background-color: #fc894d;
-    color: white;
+    background-color: $secondary-color;
+    color: $third-color;
     margin-bottom: 15px;
   }
   
   /* The close button */
   .closebtn {
     margin-left: 15px;
-    color: white;
+    color: $third-color;
     font-weight: bold;
     float: right;
     font-size: 22px;
@@ -19,5 +19,5 @@
   
   /* When moving the mouse over the close button */
   .closebtn:hover {
-    color: #f34079;
+    color: $secondary-color;
   }

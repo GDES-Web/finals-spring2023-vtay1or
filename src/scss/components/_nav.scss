@@ -2,17 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: linear-gradient(135deg, rgb(243, 64, 121) 40%, rgb(252, 137, 77));
-    color: #fff;
+    background-color: $primary-color;
+    color: $third-color;
     padding: 0% 1em;
     top:0%;
     left:0%;
     right:0%;
-    z-index: 100;
 }
 
 .nav-links a {
-    color: #fff;
+    color: $third-color;
 }
 
 .logo img {
@@ -36,7 +35,7 @@ li {
     font-size: 18px;
 }
 .menu li:hover {
-    background-color: #fc894d;
+    background-color: $secondary-color;
     border-radius: 25px;
     transition: 0.3s ease;
 }
@@ -50,7 +49,7 @@ li {
 }
 
 .dropdown {
-    background-color: #f34079;
+    background-color: $primary-color;
     padding: 1em 0;
     position: 1em 0;
     position: absolute; 
@@ -58,6 +57,7 @@ li {
     border-radius: 25px;
     top: 35px;
     margin-left: -14px;
+    z-index: 100;
 }
  
  .dropdown li + li {
@@ -69,7 +69,7 @@ li {
     text-align: center;
 }
 .dropdown li:hover {
-    background-color: #fc894d;
+    background-color: $secondary-color;
 }
 .services:hover .dropdown {
     display: block;
@@ -82,7 +82,7 @@ input[type=checkbox] {
 .hamburger {
     display: none;
     font-size: 24px;
-    user-select: none;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -93,8 +93,7 @@ input[type=checkbox] {
         left: 0;
         text-align:center;
         padding: 16px 0;
-        background-image: linear-gradient(135deg, rgb(243, 64, 121) 40%, rgb(252, 137, 77));
-
+        background-color: $primary-color;
     }
     .menu li:hover {
         display: inline-block;

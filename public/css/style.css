@@ -12,14 +12,13 @@ body, html {
   justify-content: center;
   text-align: center;
   background-position: center;
-  background-image: url("/public/imgs/Plane.jpg");
+  background-image: url("/public/imgs/LandingPage@2x.jpg");
   position: relative;
   background-size: cover;
   margin: 0;
-  z-index: -1;
 }
 .hero .hero-subtitle, .hero .hero-title {
-  color: white;
+  color: #264143;
 }
 .hero .hero-title {
   font-size: 50px;
@@ -39,8 +38,8 @@ body, html {
 .card {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 45%;
+  box-shadow: 0 4px 8px 0 rgba(6, 109, 51, 0.2);
+  width: auto;
   height: fit-content;
   padding: 20px;
   margin: 10px auto;
@@ -71,15 +70,17 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 5em;
   height: fit-content;
-  width: inherit;
+  width: 100%;
   border-radius: 20px;
 }
 
 h2 {
   margin-bottom: 16px;
   font-size: 2em;
+  margin-top: 1em;
+  color: #e99f4c;
+  font-family: "Yeseva One", cursive;
 }
 
 .btn {
@@ -92,9 +93,9 @@ h2 {
   background: none;
   padding: 15px;
   margin: 10px;
-  color: #f34079;
+  color: #264143;
   border-radius: 25px;
-  border: 2px solid #f34079;
+  border: 2px solid #264143;
   font-family: "Lato", sans-serif;
   text-decoration: none;
   text-align: center;
@@ -106,37 +107,36 @@ h2 {
 }
 
 .btn.gradient.noborder:hover, .btn.gradient:active {
-  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+  background-color: #264143;
   border-color: none;
 }
 
 .btn.fill:hover {
-  background-color: #f34079;
-  color: white;
+  background-color: #264143;
+  color: #fff;
 }
 
 .btn.square {
   border-radius: 0;
-  color: #f34079;
+  color: #264143;
   margin-left: 0;
   margin-right: 0;
 }
 
 .btn.shadow:hover {
-  box-shadow: 5px 5px #f34079;
+  box-shadow: 5px 5px #264143;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: linear-gradient(135deg, rgb(243, 64, 121) 40%, rgb(252, 137, 77));
+  background-color: #264143;
   color: #fff;
   padding: 0% 1em;
   top: 0%;
   left: 0%;
   right: 0%;
-  z-index: 100;
 }
 
 .nav-links a {
@@ -165,7 +165,7 @@ li {
 }
 
 .menu li:hover {
-  background-color: #fc894d;
+  background-color: #e99f4c;
   border-radius: 25px;
   transition: 0.3s ease;
 }
@@ -181,7 +181,7 @@ li {
 }
 
 .dropdown {
-  background-color: #f34079;
+  background-color: #264143;
   padding: 1em 0;
   position: 1em 0;
   position: absolute;
@@ -189,6 +189,7 @@ li {
   border-radius: 25px;
   top: 35px;
   margin-left: -14px;
+  z-index: 100;
 }
 
 .dropdown li + li {
@@ -202,7 +203,7 @@ li {
 }
 
 .dropdown li:hover {
-  background-color: #fc894d;
+  background-color: #e99f4c;
 }
 
 .services:hover .dropdown {
@@ -216,7 +217,7 @@ input[type=checkbox] {
 .hamburger {
   display: none;
   font-size: 24px;
-  user-select: none;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -227,7 +228,7 @@ input[type=checkbox] {
     left: 0;
     text-align: center;
     padding: 16px 0;
-    background-image: linear-gradient(135deg, rgb(243, 64, 121) 40%, rgb(252, 137, 77));
+    background-color: #264143;
   }
   .menu li:hover {
     display: inline-block;
@@ -259,6 +260,7 @@ input[type=checkbox] {
   align-items: center;
   margin: 0 auto;
   margin-top: 5em;
+  background-color: #f3ede1;
 }
 
 .footer-content h3 p {
@@ -269,7 +271,7 @@ input[type=checkbox] {
   text-decoration: none;
   padding: 10px;
   display: block;
-  color: #fc894d;
+  color: #e99f4c;
 }
 
 .footer-links li {
@@ -277,7 +279,7 @@ input[type=checkbox] {
 }
 
 .footer-links a:hover {
-  color: #f34079;
+  color: #264143;
 }
 
 .footer-content h3 {
@@ -301,7 +303,7 @@ input[type=checkbox] {
 
 .about p {
   font-family: "Yeseva One", cursive;
-  color: #fc894d;
+  color: #e99f4c;
   font-size: 24px;
   text-align: center;
 }
@@ -338,7 +340,7 @@ ul.footer-links {
 
 .sponsers li h3 {
   font-size: larger;
-  color: #fc894d;
+  color: #e99f4c;
   padding: 5px;
 }
 
@@ -356,7 +358,7 @@ ul.footer-links {
   text-decoration: none;
   padding: 10px;
   display: block;
-  color: #fc894d;
+  color: #e99f4c;
 }
 
 .footer-info li {
@@ -368,12 +370,12 @@ ul.footer-links {
 }
 
 .breadcrumb-nav a {
-  color: #fc894d;
+  color: #e99f4c;
   text-decoration: none;
 }
 
 .breadcrumb-nav a:hover {
-  color: #f34079;
+  color: #264143;
   text-decoration: none;
 }
 
@@ -384,20 +386,20 @@ ul.footer-links {
 .breadcrumb-nav li + li:before {
   padding: 4px;
   content: "/";
-  color: #f34079;
+  color: #264143;
 }
 
 .alert {
   padding: 20px;
-  background-color: #fc894d;
-  color: white;
+  background-color: #e99f4c;
+  color: #fff;
   margin-bottom: 15px;
 }
 
 /* The close button */
 .closebtn {
   margin-left: 15px;
-  color: white;
+  color: #fff;
   font-weight: bold;
   float: right;
   font-size: 22px;
@@ -408,7 +410,7 @@ ul.footer-links {
 
 /* When moving the mouse over the close button */
 .closebtn:hover {
-  color: #f34079;
+  color: #e99f4c;
 }
 
 /*# sourceMappingURL=style.css.map */

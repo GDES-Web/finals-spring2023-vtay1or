@@ -9,8 +9,8 @@
 .card {
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 45%;
+    box-shadow: 0 4px 8px 0 rgba(6, 109, 51, 0.2);
+    width: auto;
     height: fit-content;
     padding: 20px;
     margin: 10px auto;
@@ -39,15 +39,17 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 5em;
     height: fit-content;
-    width: inherit;
+    width: 100%;
     border-radius: 20px;
 }
 
 h2 {
     margin-bottom: 16px;
     font-size: 2em;
+    margin-top: 1em;
+    color: $secondary-color;
+    font-family: 'Yeseva One', cursive;
 }
 .btn {
     margin-left: auto;

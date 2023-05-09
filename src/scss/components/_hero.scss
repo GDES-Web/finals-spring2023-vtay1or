@@ -1,7 +1,8 @@
 body, html {
     margin: 0;
     height: 100%;
-    font-family: 'Yeseva One', cursive;}
+    font-family: 'Yeseva One', cursive;
+}
 .hero {
     display: flex;
     width: 100vw;
@@ -10,14 +11,13 @@ body, html {
     justify-content: center;
     text-align: center;
     background-position: center;
-    background-image: url('/public/imgs/Plane.jpg');
+    background-image: url('/public/imgs/LandingPage@2x.jpg');
     position: relative;
     background-size: cover;
     margin: 0;
-    z-index: -1;
-    
+ 
     .hero-subtitle, .hero-title {
-        color: white;
+        color: $primary-color;
     }
     .hero-title {
         font-size: 50px;

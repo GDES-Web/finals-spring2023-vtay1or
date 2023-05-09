@@ -6,7 +6,7 @@
 
 .about p {
     font-family: 'Yeseva One', cursive;
-    color: #fc894d;
+    color: $secondary-color;
     font-size: 24px;
     text-align: center;
 }
@@ -41,7 +41,7 @@ ul.footer-links {
 
 .sponsers li h3 {
     font-size: larger;
-    color: #fc894d;
+    color: $secondary-color;
     padding: 5px;
 }
 
@@ -59,7 +59,7 @@ ul.footer-links {
     text-decoration: none;
     padding: 10px;
     display: block;
-    color: #fc894d;
+    color: $secondary-color;
 }
 
 .footer-info li {
