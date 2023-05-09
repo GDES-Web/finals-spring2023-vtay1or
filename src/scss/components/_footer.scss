@@ -6,8 +6,12 @@
     align-items: center;
     margin: 0 auto;
     margin-top: 5em;
-    background-color: #f3ede1;
+    background-color: rgb(251, 242, 232);
+    position: relative;
+    background-size: cover;
+    padding: 5em;
 }
+
 .footer-content h3 p {
     max-width: 500px;
 }
@@ -15,7 +19,7 @@
     text-decoration: none;
     padding: 10px;
     display: block;
-    color: $secondary-color;
+    color: $primary-color;
 }
 
 .footer-links li {

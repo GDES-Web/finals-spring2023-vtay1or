@@ -7,30 +7,55 @@
 .about p {
     font-family: 'Yeseva One', cursive;
     color: $secondary-color;
-    font-size: 24px;
-    text-align: center;
+    font-size: 16px;
+    text-align: left;
+    max-width: 50%;
+    margin: 0;
+}
+.about-container {
+    display: flex;
 }
 
+.about img {
+    width: 25%;
+    margin: auto;
+}
 .schedule {
     margin: 0;
     padding: 0;
 }
-.schedule ul {
+.schedule-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: fit-content;
     margin: 0 auto;
-    padding: 3em;
+    padding: 5em;
     background-color: $primary-color;
-    height: 10em;
+    text-align: center;
+    flex-direction: column;
 }
-.schedule li {
+
+.schedule-item {
+    padding: 5px;
+    color: $third-color;
+    width: 100%;
+}
+.schedule-item button {
+    color: $secondary-color;
+    border-color: $secondary-color;
+}
+.schedule-itembtn.gradient.noborder:hover {
+    background-color: $secondary-color;
     color: $third-color;
 }
 
-.schedule h3 {
+.schedule-item h3 {
     font-family: 'Yeseva One', cursive;
     color: $secondary-color;
+}
+.schedule-item button {
+    width: 20%;
 }
 .registration {
     display: flex;
@@ -39,6 +64,7 @@
 
 .speakers {
     display: flex;
+    margin: 0;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-end;
@@ -72,13 +98,12 @@ ul.footer-links {
     font-family: 'Lato', sans-serif;
 }
 
-.footer-info li a {
+.footer-info-item {
     text-decoration: none;
     padding: 10px;
     display: block;
     color: $secondary-color;
+    display: inline-block;
+    color: $secondary-color;
 }
 
-.footer-info li {
-    display: inline-block;
-}

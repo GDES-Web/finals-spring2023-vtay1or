@@ -29,11 +29,11 @@ body, html {
 }
 
 .container {
-  max-width: 80%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
 }
 
 .card {
@@ -263,7 +263,10 @@ input[type=checkbox] {
   align-items: center;
   margin: 0 auto;
   margin-top: 5em;
-  background-color: #f3ede1;
+  background-color: rgb(251, 242, 232);
+  position: relative;
+  background-size: cover;
+  padding: 5em;
 }
 
 .footer-content h3 p {
@@ -274,7 +277,7 @@ input[type=checkbox] {
   text-decoration: none;
   padding: 10px;
   display: block;
-  color: #e99f4c;
+  color: #264143;
 }
 
 .footer-links li {
@@ -307,8 +310,19 @@ input[type=checkbox] {
 .about p {
   font-family: "Yeseva One", cursive;
   color: #e99f4c;
-  font-size: 24px;
-  text-align: center;
+  font-size: 16px;
+  text-align: left;
+  max-width: 50%;
+  margin: 0;
+}
+
+.about-container {
+  display: flex;
+}
+
+.about img {
+  width: 25%;
+  margin: auto;
 }
 
 .schedule {
@@ -316,23 +330,41 @@ input[type=checkbox] {
   padding: 0;
 }
 
-.schedule ul {
+.schedule-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: fit-content;
   margin: 0 auto;
-  padding: 3em;
+  padding: 5em;
   background-color: #264143;
-  height: 10em;
+  text-align: center;
+  flex-direction: column;
 }
 
-.schedule li {
+.schedule-item {
+  padding: 5px;
+  color: #fff;
+  width: 100%;
+}
+
+.schedule-item button {
+  color: #e99f4c;
+  border-color: #e99f4c;
+}
+
+.schedule-itembtn.gradient.noborder:hover {
+  background-color: #e99f4c;
   color: #fff;
 }
 
-.schedule h3 {
+.schedule-item h3 {
   font-family: "Yeseva One", cursive;
   color: #e99f4c;
+}
+
+.schedule-item button {
+  width: 20%;
 }
 
 .registration {
@@ -342,6 +374,7 @@ input[type=checkbox] {
 
 .speakers {
   display: flex;
+  margin: 0;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: flex-end;
@@ -377,15 +410,13 @@ ul.footer-links {
   font-family: "Lato", sans-serif;
 }
 
-.footer-info li a {
+.footer-info-item {
   text-decoration: none;
   padding: 10px;
   display: block;
   color: #e99f4c;
-}
-
-.footer-info li {
   display: inline-block;
+  color: #e99f4c;
 }
 
 .breadcrumb-nav {
